@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE `Endpoint` ADD COLUMN `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    ADD COLUMN `lastErrorMessage` VARCHAR(191) NULL;
+
+-- AlterTable
+ALTER TABLE `History` ADD COLUMN `errorMessage` VARCHAR(191) NULL;
